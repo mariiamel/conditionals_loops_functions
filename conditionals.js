@@ -3,21 +3,53 @@ console.log("Hello from conditionals!")
 
 // 1)
 // Create a variable called dogName, set it to 'Violet'
+var dodName = 'Violet';
+
 // if dogName is Violet, print "This is the best dog"
+ if (dogName == 'Violet') {
+    console.log("This is the best dog");
+ } else if (dogName == 'Moose') {
+    console.log("Also a very good dog");
+ } else {
+    console.log("All dogs are good");  
+ }
+
 // otherwise, if dogName is Moose, print "Also a very good dog"
 // otherwise, print "All dogs are good"
 
 // 2) If 5 is greater than 4, print "Math still works, what a relief"
 // otherwise, print "The basic laws of math have failed us"
-
+if (5 > 4) {
+    console.log("Math still works, what a relief");
+} else {
+    console.log("The basic laws of math have failed us");
+}
 // 3) Create two variables, income and expenses, giving them whatever values you'd like.
 // If income is greater than or equal to expenses, print "Budget is balanced", then print the amount of surplus
 // Otherwise, print "Uh oh, budgeting problem", then print the amount of defecit
 // Try embedding the surplus/defecit into the string you're printing! This can be done with string concatenation or string templating. Try it both ways. Google for examples if unsure.
 // Change the values of income and expenses to force the other branch of the conditional to fire.
+ var income = 1000;
+ var expenses = 500;
+ var defecit = income - expenses;
 
+ if (income >= expenses) {
+    console.log("Budget is balanced");
+ } else {
+    console.log("Uh oh, budgeting problem");
+    console.log("defecit is"  + defecit);
+ }
 // 4) Create two variables, temp and raining. Set temp to a number and raining to a boolean.
+let temp = 65;
+let raining = true;
 // If temp is 72 or higher and raining is false, print 'Vacation time!'
+if (temp >=72 && raining == false) {
+    console.log('Vacation time!');
+} else if (temp >= 72 && raining == true) {
+    console.log('Tropical rainstorm');
+} else if (temp < 72 && raining == false) {
+    console.log('Weather is cold');
+}
 // 4b) Consider all the outcomes of these two conditions, numbere 1 thru 4:
 //                temp is 72 or higher?
 //                yes   no
